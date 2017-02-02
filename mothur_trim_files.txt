@@ -1,0 +1,10 @@
+../data/seq/BCS1_10_S10_L001_R_denoised_contiged.trim.fasta
+../data/seq/BCS1_1_S1_L001_R_denoised_contiged.trim.fasta
+../data/seq/BCS1_2_S2_L001_R_denoised_contiged.trim.fasta
+../data/seq/BCS1_3_S3_L001_R_denoised_contiged.trim.fasta
+../data/seq/BCS1_4_S4_L001_R_denoised_contiged.trim.fasta
+../data/seq/BCS1_5_S5_L001_R_denoised_contiged.trim.fasta
+../data/seq/BCS1_6_S6_L001_R_denoised_contiged.trim.fasta
+../data/seq/BCS1_7_S7_L001_R_denoised_contiged.trim.fasta
+../data/seq/BCS1_8_S8_L001_R_denoised_contiged.trim.fasta
+../data/seq/BCS1_9_S9_L001_R_denoised_contiged.trim.fasta

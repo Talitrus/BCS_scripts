@@ -1,0 +1,10 @@
+BCS1_ind10_MiSeq_adap16.oligos
+BCS1_ind1_MiSeq_adap2.oligos
+BCS1_ind2_MiSeq_adap4.oligos
+BCS1_ind3_MiSeq_adap5.oligos
+BCS1_ind4_MiSeq_adap6.oligos
+BCS1_ind5_MiSeq_adap7.oligos
+BCS1_ind6_MiSeq_adap12.oligos
+BCS1_ind7_MiSeq_adap13.oligos
+BCS1_ind8_MiSeq_adap14.oligos
+BCS1_ind9_MiSeq_adap15.oligos
