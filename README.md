@@ -10,6 +10,7 @@ mothur_trim.sh
 mothur_merge.sh <-> merge_split.sh
 MACSE_align.sh <-> mACSE_align_split.sh
 update_names.sh
+precluster.sh
 ```
 ###BFC.sh
 Run BFC to denoise.
@@ -30,3 +31,6 @@ Use this to truncate reads if the ends are low quality.
 
 ###update\_names.sh
 Removes sequence labels that are no longer in the aligned FASTA file. This step preps for removal in MOTHUR.
+
+###precluster.sh
+Runs count.seqs, pre.cluster, chimera.uchime, remove.seqs (remove chimeras) commands in MOTHUR.
