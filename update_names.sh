@@ -13,7 +13,8 @@ grep ">" CombinedRuns_denoised_contiged.trim.unique.fasta > FastaHeaders.txt
 grep ">" macse.fasta > FastaHeaders.MACSE.txt
 sort -d FastaHeaders.txt > FastaHeaders.sorted.txt
 sort -d FastaHeaders.MACSE.txt > FastaHeaders.MACSE.sorted.txt
-comm -23 FastaHeaders.sorted.txt FastaHeaders.MACSE.sorted.txt  > outfile.accnos
+#comm -23 FastaHeaders.sorted.txt FastaHeaders.MACSE.sorted.txt  > outfile.accnos
+join -v 2 FastaHeaders.MACSE.sorted.txt FastaHeaders.sorted.txt > outfile.accnos 
 sed -ibak -E 's/^>//' outfile.accnos
 module load mothur
 mothur "#remove.seqs(accnos=outfile.accnos,name=CombinedRuns_denoised_contiged.trim.names,group=CombinedRuns_denoised_contiged.groups)"

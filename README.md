@@ -9,6 +9,7 @@ usearch.sh
 mothur_trim.sh
 mothur_merge.sh <-> merge_split.sh
 MACSE_align.sh <-> mACSE_align_split.sh
+mothur_remove_ref.sh
 update_names.sh
 precluster.sh
 ```
@@ -28,6 +29,9 @@ Use this to truncate reads if the ends are low quality.
 ###merge\_split.sh
 
 ###mACSE\_align\_split.sh
+
+###mothur\_remove\_ref.sh
+Remove sequences from BIOCODE2014\_MACSE\_313\_headers.accnos.
 
 ###update\_names.sh
 Removes sequence labels that are no longer in the aligned FASTA file. This step preps for removal in MOTHUR.

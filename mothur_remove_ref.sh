@@ -1,7 +1,8 @@
 #!/bin/bash
 #SBATCH -N 1
 #SBATCH -t 01:00:00
-#SBATCH -J mo_merge
+#SBATCH -J mo_remove_ref
+#SBATCH --array=1-58
 #SBATCH -p defq,short
 #SBATCH --mail-type=all
 #SBATCH --mail-user=bnguyen@gwu.edu
