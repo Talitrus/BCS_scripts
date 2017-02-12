@@ -10,4 +10,4 @@
 name1=$(sed -n "$SLURM_ARRAY_TASK_ID"p seq_list.txt)
 cd ../data/seq
 module load mothur
-mothur "#count.seqs(name=CombinedRuns_denoised_contiged.trim.pick.names, group=CombinedRuns_denoised_contiged.pick.groups); pre.cluster(fasta=macse.fasta,count=CombinedRuns_denoised_contiged.pick.count_table,diffs=3); chimera.uchime(fasta=macse.precluster.fasta,count=macse.precluster.count_table)"
+mothur "#count.seqs(name=CombinedRuns_denoised_contiged.trim.pick.names, group=CombinedRuns_denoised_contiged.pick.groups); pre.cluster(fasta=macse.fasta,count=CombinedRuns_denoised_contiged.pick.count_table,diffs=3); chimera.uchime(fasta=macse.precluster.fasta,count=macse.precluster.count_table); split.abund(fasta=macse.precluster.pick.fasta,count=macse.precluster.pick.count_table, cutoff=1,accnos=true); remove.seqs(accnos=rare.accnos,fasta=macse.precluster.pick.fasta,count=macse.precluster.pick.count_table)"
