@@ -23,7 +23,7 @@ Use this to check the read quality by basepair.
 Use this to truncate reads if the ends are low quality.
 
 ###usearch.sh
-
+Be sure to adjust the parameters with in usearch.sh to accomodate the barcode being used.
 ###mothur\_trim.sh
 
 ###merge\_split.sh

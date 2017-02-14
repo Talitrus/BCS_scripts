@@ -11,8 +11,8 @@ name1=$(sed -n "$SLURM_ARRAY_TASK_ID"p seq_list.txt)
 cd ../data/seq
 grep ">" CombinedRuns_denoised_contiged.trim.unique.fasta > FastaHeaders.txt
 grep ">" macse.fasta > FastaHeaders.MACSE.txt
-sort -d FastaHeaders.txt > FastaHeaders.sorted.txt
-sort -d FastaHeaders.MACSE.txt > FastaHeaders.MACSE.sorted.txt
+sort FastaHeaders.txt > FastaHeaders.sorted.txt
+sort FastaHeaders.MACSE.txt > FastaHeaders.MACSE.sorted.txt
 #comm -23 FastaHeaders.sorted.txt FastaHeaders.MACSE.sorted.txt  > outfile.accnos
 join -v 2 FastaHeaders.MACSE.sorted.txt FastaHeaders.sorted.txt > outfile.accnos 
 sed -ibak -E 's/^>//' outfile.accnos
