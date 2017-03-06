@@ -12,6 +12,10 @@ MACSE_align.sh <-> mACSE_align_split.sh
 mothur_remove_ref.sh
 update_names.sh
 precluster.sh
+CROP.sh
+blast_all.sh
+sap_all.sh
+
 ```
 ###BFC.sh
 Run BFC to denoise.
