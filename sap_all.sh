@@ -12,4 +12,4 @@ cd ../data/seq
 module load python/2.7.6
 module load clustalw2
 module load blast+
-sap --database /groups/cbi/bryan/COI_all.fasta --project BCS1_all2 macse.precluster.pick.pick.redundant_CROP.cluster.fasta
+sap --database /groups/cbi/bryan/COI_all.fasta --project BCS1_all080 -minidentity 0.80 macse.precluster.pick.pick.redundant_CROP.cluster.fasta

@@ -1,7 +1,7 @@
-#BCS1 COI pipeline
+# BCS1 COI pipeline
 These scripts are built to run on a server with SLURM.
 
-##Script run order
+## Script run order
 ```bash
 BFC.sh
 (trunc.sh)
@@ -17,28 +17,31 @@ blast_all.sh
 sap_all.sh
 
 ```
-###BFC.sh
+### BFC.sh
 Run BFC to denoise.
 
-###eestats2.sh
+### eestats2.sh
 Use this to check the read quality by basepair.
 
-###trunc.sh
+### trunc.sh
 Use this to truncate reads if the ends are low quality.
 
-###usearch.sh
+### usearch.sh
 Be sure to adjust the parameters with in usearch.sh to accomodate the barcode being used.
-###mothur\_trim.sh
+### mothur\_trim.sh
 
-###merge\_split.sh
+### merge\_split.sh
 
-###mACSE\_align\_split.sh
+### mACSE\_align\_split.sh
 
-###mothur\_remove\_ref.sh
+### mothur\_remove\_ref.sh
 Remove sequences from BIOCODE2014\_MACSE\_313\_headers.accnos.
 
-###update\_names.sh
+### update\_names.sh
 Removes sequence labels that are no longer in the aligned FASTA file. This step preps for removal in MOTHUR.
 
-###precluster.sh
+### precluster.sh
 Runs count.seqs, pre.cluster, chimera.uchime, remove.seqs (remove chimeras) commands in MOTHUR.
+
+### CROP.sh
+Cluster sequences
